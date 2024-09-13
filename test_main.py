@@ -6,9 +6,8 @@ import main
 
 # Test 1: Ensure data is loaded correctly
 def test_data_loading():
-    stock = pd.read_csv('NASDAQ_100_Data_From_2010.csv',sep='\t')
-    stock_AAPL = stock.loc[stock['Name'] == 'AAPL']
-    assert not stock_AAPL.empty, "Data loading failed: No AAPL data found."
+    yearly_stats = main.preprocess_data()
+    assert not yearly_stats.empty, "Data loading failed: No data found."
 
 # Test 2: Check if README is generated
 def test_readme_generation():
