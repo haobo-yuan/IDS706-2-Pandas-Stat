@@ -14,3 +14,6 @@ Deliverable:
 Python script 
 CI/CD with badge
 Generated summary report (PDF or markdown) via CI/CD for extra credit or making your own PDF or MD file and pushing it 
+
+Data Reference
+> https://www.kaggle.com/datasets/kalilurrahman/nasdaq100-stock-price-data/data
