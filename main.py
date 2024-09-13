@@ -2,17 +2,7 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-import datetime
-import time
-# import requests
-import io
-import numpy as np
 import pandas as pd
-import warnings
-warnings.filterwarnings("ignore")
-sns.set_style('whitegrid')
-plt.style.use("fivethirtyeight")
 
 # Read the data
 stock = pd.read_csv('NASDAQ_100_Data_From_2010.csv',sep='\t')
@@ -37,11 +27,11 @@ print(yearly_stats)
 plt.figure(figsize=(15, 6))
 plt.plot(yearly_stats.index, yearly_stats['mean'], label='Mean', marker='o')
 plt.plot(yearly_stats.index, yearly_stats['median'], label='Median', marker='x')
-plt.plot(yearly_stats.index, yearly_stats['standard deviation'], label='Standard Deviation', marker='s')
+plt.plot(yearly_stats.index, yearly_stats['std'], label='Standard Deviation', marker='s')
+plt.grid(True)
 
 plt.title('AAPL Close Price Statistics (2010-2021)')
 plt.xlabel('Year')
 plt.ylabel('Price')
 plt.legend()
-# plt.show()  # not work in wsl2 ubuntu
 plt.savefig('plot.png')
