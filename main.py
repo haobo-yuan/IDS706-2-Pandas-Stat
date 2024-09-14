@@ -2,7 +2,6 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
-import pandas as pd
 
 # Data Preprocessing
 def preprocess_data():
@@ -34,7 +33,7 @@ def generate_plot(yearly_stats):
 
 # Generate README.md
 def generate_readme(yearly_stats):
-    with open('README.md', 'w') as f:
+    with open('README.md', 'w', encoding='utf-8') as f:
         f.write('# AAPL Price Statistics (2010-2021)\n')
         f.write('This is a IDS-706 homework project that calculates the mean, median,' \
                 'and standard deviation of AAPL stock close prices from 2010 to 2021.\n\n')
@@ -61,6 +60,6 @@ def generate_readme(yearly_stats):
 
 
 if __name__ == '__main__':
-    yearly_stats = preprocess_data()
-    generate_plot(yearly_stats)
-    generate_readme(yearly_stats)
+    data = preprocess_data()
+    generate_plot(data)
+    generate_readme(data)
