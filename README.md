@@ -26,8 +26,8 @@ The statistics are as follows:
 ![Plot](plot.png)
 
 Apple Inc.'s stock performance from 2010 to 2021 shows significant growth, with the average
-             price rising from $9.28 to $134.34. The company saw consistent increases in stock value, 
-            particularly in 2020 and 2021, likely driven by strong demand for electronics during the pandemic
-             and its market leadership in innovation. While volatility increased in the later years, especially
-             in 2020 with the standard deviation peaking at 21.81. \n Apple's overall performance was robust,
-             reflecting its resilience and growth in the global tech industry.
+                price rising from $9.28 to $134.34. The company saw consistent increases in stock value, 
+                particularly in 2020 and 2021, likely driven by strong demand for electronics during the pandemic
+                and its market leadership in innovation. While volatility increased in the later years, especially
+                in 2020 with the standard deviation peaking at 21.81, Apple's overall performance was robust,
+                reflecting its resilience and growth in the global tech industry.
